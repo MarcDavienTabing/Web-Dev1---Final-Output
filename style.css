@@ -1,26 +1,37 @@
 body {  font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-
+    min-height: 100vh;
+    min-width: auto;
+}
+.grid-container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #323232;
+    margin: 0%;
 }
 
 /* Home css */
 #Home .grid-container {
     justify-content: center;
     margin: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #323232;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     justify-content: center;
-    gap: 1em;
+    gap: 20px;
     grid-template-areas:
-    "card-1 card-2 card-2 card-2"
-    "card-1 card-3 card-4 card-5"
-    "card-1 card-6 card-6 card-6";
+    "card-1 card-1 card-1"
+    "card-2 card-2 card-2"
+    "card-3 card-4 card-5"
+    "card-6 card-6 card-6";
 
 }
+
 .card {
+    align-content: center;
+    width: auto;
+    height: auto;
+    pad: 1em;
+    border-radius: 10px;
     background-color: #191919;
     color: white;
     object-fit: contain;
@@ -49,7 +60,7 @@ body {  font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
-    margin: 5%;
+    margin: 1%;
     justify-content: center;
     text-align: center;
 }
@@ -68,39 +79,36 @@ body {  font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 
-.nav ul{
+nav ul{
     list-style: none;
-    padding: 3%;
+    padding: 1%;
 }
-.nav ul li {
+nav ul a {
+    border-radius: 8px;
+    padding: 1em;
+    background-color: #323232;
     margin-left: 4%;
     margin-bottom: 20px;
-}
-
-.nav {
-
-    display: grid;
-    grid-template-rows: 30px 30px 30px 30px 30px;
-}
-
-.nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+nav{
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
 
+/* Menu css */
 #Menu .grid-container {
     justify-content: center;
     margin: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #323232;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr .5fr 1fr .5fr 1fr .5fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     justify-content: center;
-    gap: 1em;
+    gap: 10px;
     grid-template-areas:
-    "card-1 card-1 card-1"
+    "card-1 card-1 card-1 "
     "card-2 card-2 card-2"
     "card-3 card-4 card-5"
     "card-6 card-6 card-6"
@@ -108,30 +116,18 @@ body {  font-family: Arial, Helvetica, sans-serif;
     "card-10 card-10 card-10"
     "card-11 card-12 card-13";
 }
-/* Menu css */
-#Menu .nav {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-
-}
-
 a {
     color: white;
     text-decoration: none;
 }
 
 .product img {
-    height: 36%;
-    width: auto;
+    width: 80%;
     padding: 10px;
     place-items: center;
     display: flex;
     margin: 6%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .price p,span {
@@ -139,4 +135,21 @@ a {
     justify-content: center;
     text-align: center;
     font: 30px;
+}
+
+#order .grid-container{
+    display: grid;
+    margin: 0%;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas: 
+    "card-1 card-1"
+    "card-2 card-2"
+    "card-3 card-4"
+    "card-5 card-6"
+    "card-7 card-8"
+    "card-9 card-9"
+    "card-10 card-10";
 }
