@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="order">
+        <div class="grid-container">
+            <div class="card" style="grid-area: card-1;">
+                <nav>
+                    <h1 class="content">Meteor Meat!</h1>
+                    <ul>
+                        <a href="C:\Users\marc davien\OneDrive\Documents\School\Web Dev 1\Final Output\index.html" target="_self">Home</a>
+                        <a href="C:\Users\marc davien\OneDrive\Documents\School\Web Dev 1\Final Output\menu.html" target="_self">Menu</a>
+                        <a href="C:\Users\marc davien\OneDrive\Documents\School\Web Dev 1\Final Output\order.html" target="_self">Order</a>
+                        <a href="C:\Users\marc davien\OneDrive\Documents\School\Web Dev 1\Final Output\about.html">About</a>
+                        <a href="C:\Users\marc davien\OneDrive\Documents\School\Web Dev 1\Final Output\contact.html">Contuct Us</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card" style="grid-area: card-2;">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+
+            <div class="card" style="grid-area: card-3;">
+                <label for="burger">Choose a Burger:</label><br>
+                <select id="burger" name="burger">
+                    <option>None</option>
+                    <option>Classic Cheeseburger</option>
+                    <option>Bacon BBQ Burger</option>
+                    <option>Spicy Jalapeño Burger</option>
+                </select><br><br>
+            </div>
+
+            <div class="card" style="grid-area: card-4;">
+                <label for="quantity1">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" value="1"><br><br>
+            </div>
+
+            <div class="card" style="grid-area: card-5;">
+                <label for="drink">Choose a Drink:</label><br>
+                <select id="drink" name="drink">
+                    <option>None</option>
+                    <option>Water</option>
+                    <option>Coke</option>
+                    <option>Iced Tea</option>
+                </select><br><br>
+            </div>
+
+            <div class="card" style="grid-area: card-6;">
+                <label for="quantity2">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" value="1"><br><br>
+            </div>
+
+            <div class="card" style="grid-area: card-7;">
+                <label for="misc">Choose a Misc. item:</label><br>
+                <select id="misc" name="misc">
+                    <option>None</option>
+                    <option>Cookies 'n Cream Milkshake</option>
+                    <option>Chocolate Milkshake</option>
+                    <option>Fries</option>
+                </select><br><br>
+            </div>
+
+            <div class="card" style="grid-area: card-8;">
+                <label for="quantity3">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" value="1"><br><br>
+            </div>
+            <div class="card" style="grid-area: card-9;">
+                <label>Order Type:</label><br>
+                <input type="radio" name="type" value="pickup"> Pickup<br>
+                <input type="radio" name="type" value="delivery"> Delivery<br><br>
+            </div>
+
+            <div class="card" style="grid-area: card-10;">
+                <button type="submit">Submit Order</button>
+            </div>
+        </div>
+</body>
+</html>
